@@ -10,12 +10,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+
 public class MainActivity extends AppCompatActivity {
     //Declaration
     TextView tregister;
     Button login;
     EditText username;
     EditText password;
+
+    DatabaseReference user;
 
 
     @Override
