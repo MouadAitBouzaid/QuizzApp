@@ -24,5 +24,46 @@
         android:src="@drawable/q4"></ImageView>
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtQz4"
+        android:text="Question 4 ?"
+        android:layout_gravity="center"
+        ></TextView>
+
+    <RadioGroup
+        android:id="@+id/group4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+
+
+        >
+        <RadioButton
+            android:id="@+id/radio41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oui"
+            ></RadioButton>
+        <RadioButton
+            android:id="@+id/radio42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non"
+            ></RadioButton>
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/Next4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="next"></Button>
+
+
+
 
 </LinearLayout>

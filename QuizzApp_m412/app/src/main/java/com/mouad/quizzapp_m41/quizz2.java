@@ -17,7 +17,7 @@ public class quizz2 extends AppCompatActivity {
     private RadioButton answer2;
     private RadioButton correctAns;
 
-    int cpt=0;
+    int cpt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,9 @@ public class quizz2 extends AppCompatActivity {
         answer1=findViewById(R.id.radio21);
         answer2=findViewById(R.id.radio22);
 
+        Intent intent = getIntent();
+        cpt = intent.getIntExtra("score", 0);
+
         //Association de listner
         next2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,9 +40,9 @@ public class quizz2 extends AppCompatActivity {
                 correctAns = findViewById(radioId);
                 if(correctAns.getText().toString().equals("Oui")){
                     cpt++;
-                    startActivity(new Intent(quizz2.this,quizz3.class));
+                    startActivity(new Intent(quizz2.this,quizz3.class).putExtra("score", cpt));
                 }else{
-                    startActivity(new Intent(quizz2.this,quizz3.class));
+                    startActivity(new Intent(quizz2.this,quizz3.class).putExtra("score", cpt));
                 }
 
             }

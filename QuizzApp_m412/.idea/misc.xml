@@ -3,13 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2195" />
+        <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.2195" />
+        <entry key="app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.2195" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2195" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_quizz1.xml" value="0.3125" />
         <entry key="app/src/main/res/layout/activity_quizz2.xml" value="0.20606884057971014" />
         <entry key="app/src/main/res/layout/activity_quizz3.xml" value="0.2635416666666667" />
-        <entry key="app/src/main/res/layout/activity_quizz4.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_quizz4.xml" value="0.31417236328125003" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.2635416666666667" />
         <entry key="app/src/main/res/layout/activity_register2.xml" value="0.2635416666666667" />
+        <entry key="app/src/main/res/layout/activity_score.xml" value="0.18070652173913043" />
+        <entry key="app/src/main/res/layout/activity_score_test.xml" value="0.3497854077253219" />
       </map>
     </option>
   </component>

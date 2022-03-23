@@ -13,9 +13,11 @@ public class quizz3 extends AppCompatActivity {
     //Declaration
     private Button next3;
     private RadioGroup Rgroup3;
-    private RadioButton answer21;
-    private RadioButton answer22;
+    private RadioButton answer31;
+    private RadioButton answer32;
     private RadioButton correctAns3;
+
+    int cpt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +26,11 @@ public class quizz3 extends AppCompatActivity {
         //Recuperation
         Rgroup3 =findViewById(R.id.group3);
         next3 =findViewById(R.id.Next3);
-        answer21=findViewById(R.id.radio31);
-        answer22=findViewById(R.id.radio32);
+        answer31=findViewById(R.id.radio31);
+        answer32=findViewById(R.id.radio32);
+
+        Intent intent = getIntent();
+        cpt = intent.getIntExtra("score", 0);
 
         next3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,10 +38,10 @@ public class quizz3 extends AppCompatActivity {
                 int radioId = Rgroup3.getCheckedRadioButtonId();
                 correctAns3 = findViewById(radioId);
                 if(correctAns3.getText().toString().equals("Oui")){
-
-                    startActivity(new Intent(quizz3.this,quizz4.class));
+                cpt++;
+                    startActivity(new Intent(quizz3.this,quizz4.class).putExtra("score", cpt));
                 }else{
-                    startActivity(new Intent(quizz3.this,quizz4.class));
+                    startActivity(new Intent(quizz3.this,quizz4.class).putExtra("score", cpt));
                 }
 
 

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scoreTest"
+    android:orientation="vertical"
+    android:background="@color/teal_200"
+    >
+
+    <ImageView
+        android:id="@+id/imageScore"
+        android:layout_width="match_parent"
+        android:layout_height="339dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvscore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Votre Score est :"></TextView>
+
+
+    <TextView
+        android:id="@+id/tvscore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Quizz 4/4"></TextView>
+
+
+    <Button
+        android:id="@+id/btnreplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Replay"></Button>
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="LogOut"></Button>
+
+</LinearLayout>

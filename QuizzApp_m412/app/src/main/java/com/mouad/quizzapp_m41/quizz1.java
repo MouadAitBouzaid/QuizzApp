@@ -37,11 +37,11 @@ public class quizz1 extends AppCompatActivity {
             correctAns = findViewById(radioId);
             if(correctAns.getText().toString().equals("Oui")){
                 cpt++;
-                startActivity(new Intent(quizz1.this,quizz2.class));
-            }else{
-                startActivity(new Intent(quizz1.this,quizz2.class));
-            }
 
+                startActivity(new Intent(quizz1.this,quizz2.class).putExtra("score", cpt));
+            }else{
+                startActivity(new Intent(quizz1.this,quizz2.class).putExtra("score", cpt));
+            }
             }
         });
     }
