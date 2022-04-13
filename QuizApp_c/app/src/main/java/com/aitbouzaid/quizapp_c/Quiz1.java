@@ -11,17 +11,22 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class Quiz1 extends AppCompatActivity {
     RadioGroup rg;
     RadioButton rb;
     Button bNext;
     int score=0;
     String RepCorrect="Non";
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz1);
         rg=(RadioGroup) findViewById(R.id.rg);
+        mAuth = FirebaseAuth.getInstance();
         bNext=(Button) findViewById(R.id.bNext);
         bNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,5 +53,15 @@ public class Quiz1 extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            startActivity(new Intent(Quiz1.this, MainActivity.class));
+        }
     }
 }
