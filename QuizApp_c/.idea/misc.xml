@@ -7,13 +7,14 @@
         <entry key="app/src/main/res/layout/activity_firebase_register.xml" value="0.2989583333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.2989583333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21739130434782608" />
+        <entry key="app/src/main/res/layout/activity_my_score.xml" value="0.29375" />
         <entry key="app/src/main/res/layout/activity_quizz1.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_quizz2.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_quizz3.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_quizz4.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_quizz5.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_score.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_score.xml" value="0.1893491124260355" />
       </map>
     </option>
   </component>

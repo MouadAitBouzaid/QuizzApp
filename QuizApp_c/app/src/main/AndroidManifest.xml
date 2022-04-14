@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aitbouzaid.quizapp_c">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,23 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp_c">
         <activity
-            android:name=".FirebaseRegister"
+            android:name=".Score"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
             android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".testConeection"
-            android:exported="false" />
-        <activity
-            android:name=".Score"
-            android:exported="false" />
         <activity
             android:name=".Quiz5"
             android:exported="false" />
@@ -41,14 +35,13 @@
             android:exported="false" />
         <activity
             android:name=".Quiz1"
-            android:exported="false" />
-        <activity
-            android:name=".Register"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

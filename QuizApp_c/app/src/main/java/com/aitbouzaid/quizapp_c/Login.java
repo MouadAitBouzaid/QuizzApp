@@ -41,9 +41,11 @@ public class Login extends AppCompatActivity {
             loginUser();
         });
         tvRegisterHere.setOnClickListener(view ->{
-            startActivity(new Intent(Login.this, FirebaseRegister.class));
+            startActivity(new Intent(Login.this, Register.class));
         });
     }
+
+
 
     private void loginUser(){
         String email = etLoginEmail.getText().toString();
@@ -69,4 +71,5 @@ public class Login extends AppCompatActivity {
             });
         }
     }
+
 }
